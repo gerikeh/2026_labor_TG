@@ -6,6 +6,13 @@ def ker_ter(alap, magassag):
     t = alap * magassag
     return k, t
 
+def lotto():
+    i = 0
+    while i < 5:
+        veletlen_szam = random.randint(1, 90)
+        print(veletlen_szam)
+        i += 1
+
 
 felhasznalo_kora = int(input('Hány éves vagy?: '))
 
@@ -40,8 +47,5 @@ magassag = 4
 
 eredmeny = ker_ter(alap, magassag)
 print(f"Kerület = {eredmeny[0]}, Terület = {eredmeny[1]}")
-
-i = 0
-while i < 5:
-    print(random.randint(1, 90))
-    i += 1
+print(" lotto szamok")
+lotto()
